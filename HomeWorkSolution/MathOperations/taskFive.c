@@ -11,9 +11,9 @@ int main() {
 	minus = a - b;
 	ymnoj = a * b;
 	delenie =(float) a / b;
-	sak = pow(a, 2) * pow(b, 2) * 0.5;
-	sam = abs(a) + abs(b) * 0.5;
-	ostatok = a / b;
+	sak = (pow(a, 2) + pow(b, 2))* 0.5;
+	sam = (abs(a) + abs(b))* 0.5;
+	ostatok = a%b;
 	printf("%d %d %d %.2f %d %d %d\n", plus, minus, ymnoj, delenie, sak, sam, ostatok);
 
 

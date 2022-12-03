@@ -6,8 +6,9 @@ int main() {
 	int a;
 	printf("¬ведите число a: ");
 	scanf_s("%d", &a);
-	printf("„исло а+1: %d\n", a + 1);
-	printf("„исло а+2: %d\n", a + 2);
+	printf("1: %d\n", a);
+	printf("2: %d\n", a + 1);
+	printf("3: %d\n", a + 2);
 	
 
 	system("pause");

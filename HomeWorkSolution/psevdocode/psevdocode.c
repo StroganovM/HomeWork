@@ -7,16 +7,18 @@ int main() {
 	printf("Ввидите переменные X, Y, Z\n");
 	scanf_s("%d %d %d", &x, &y, &z);
 	if (x != y && x != z && y != z) {
-		if (x > y && x > z) 
+		if (x > y && x > z) {
 			z += x;
-		
-		else if (y > x && y > z) 
+		}
+		else if (y > x && y > z) {
 			z += y;
-		
-		else 
+		}
+
+		else {
 			z *= z;
 			printf("%d\n", z);
-		
+		}
+	
 	}
     else if (x == y && x == z) {
 		printf("Все переменные равны!\n");
