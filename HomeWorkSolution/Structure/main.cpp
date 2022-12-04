@@ -80,7 +80,6 @@ struct body {
 	float waist;
 	float thigh;
 };
-
 struct worker {
 	FIO workerFIO;
 	B_day workerBday;
@@ -92,7 +91,6 @@ struct dish {
 	std::string name;
 	std::string ingridients;
 	BJYK bjyk;
-	float prise;
 };
 struct student {
 	FIO studentFIO;
@@ -107,6 +105,14 @@ struct patient {
 	B_day PatientBDay;
 	body PatientBody;
 	std::string ill;
+};
+struct BigEaters {
+	dish eaten;
+	time_st WhenEaten;
+};
+struct familly {
+	std::string name;
+	std::string connection;
 };
 //Задание 2 конец
 int main() {
@@ -126,10 +132,66 @@ int main() {
 	dish any{};
 	any.name = "Pelmeni";
 	any.ingridients = "testo, farsh";
-	any.prise = 500;
-	any.bjyk = { 1,1,1,1.2 };
-	std::cout << any.name << " " << any.ingridients << " " << any.prise << " " << any.bjyk.calories << any.bjyk.csrbons << std::endl;
+	any.bjyk = { 1,1,1, 1.2 };
+	std::cout << any.name << " " << any.ingridients << " " << any.bjyk.calories << any.bjyk.csrbons << std::endl;
 	//Задание 3 конец
+	//Задание 4 Приём пищи
+	BigEaters Breakfast{};
+	Breakfast.eaten.name = "Tea with sandwich";
+	Breakfast.eaten.ingridients = "Black Tea, bread,Doktorska sausage";
+	Breakfast.eaten.bjyk = { 100,100,100,100 };
+	Breakfast.WhenEaten = { 9,30,0 };
+	BigEaters Lunch{};
+	Lunch.eaten.name = "Sup";
+	Lunch.eaten.ingridients = "all ingridients for sup";
+	Lunch.eaten.bjyk = { 100,100,100,100 };
+	Lunch.WhenEaten = { 12,30,0 };
+	BigEaters Supper{};
+	Supper.eaten.name = "Grilled chicken";
+	Supper.eaten.ingridients = "all ingridients for Grilled chicken";
+	Supper.eaten.bjyk = { 100,100,100,100 };
+	Supper.WhenEaten = { 17,30,0 };
+	struct BigEaters* main_BigEaters;
+	main_BigEaters = new struct BigEaters[2];
+	main_BigEaters[0].eaten.bjyk.calories=Breakfast.eaten.bjyk.calories;
+	main_BigEaters[0].eaten.bjyk.csrbons=Breakfast.eaten.bjyk.csrbons;
+	main_BigEaters[0].eaten.bjyk.fats=Breakfast.eaten.bjyk.fats;
+	main_BigEaters[0].eaten.bjyk.proteins=Breakfast.eaten.bjyk.proteins;
+	main_BigEaters[0].WhenEaten.hour=Breakfast.WhenEaten.hour;
+	main_BigEaters[0].WhenEaten.min= Breakfast.WhenEaten.min;
+	main_BigEaters[0].WhenEaten.seconds=Breakfast.WhenEaten.seconds;
+	//
+	main_BigEaters[1].eaten.bjyk.calories = Lunch.eaten.bjyk.calories;
+	main_BigEaters[1].eaten.bjyk.csrbons = Lunch.eaten.bjyk.csrbons;
+	main_BigEaters[1].eaten.bjyk.fats = Lunch.eaten.bjyk.fats;
+	main_BigEaters[1].eaten.bjyk.proteins = Lunch.eaten.bjyk.proteins;
+	main_BigEaters[1].WhenEaten.hour = Lunch.WhenEaten.hour;
+	main_BigEaters[1].WhenEaten.min = Lunch.WhenEaten.min;
+	main_BigEaters[1].WhenEaten.seconds = Lunch.WhenEaten.seconds;
+	//
+	main_BigEaters[2].eaten.bjyk.calories = Supper.eaten.bjyk.calories;
+	main_BigEaters[2].eaten.bjyk.csrbons = Supper.eaten.bjyk.csrbons;
+	main_BigEaters[2].eaten.bjyk.fats = Supper.eaten.bjyk.fats;
+	main_BigEaters[2].eaten.bjyk.proteins = Supper.eaten.bjyk.proteins;
+	main_BigEaters[2].WhenEaten.hour = Supper.WhenEaten.hour;
+	main_BigEaters[2].WhenEaten.min = Supper.WhenEaten.min;
+	main_BigEaters[2].WhenEaten.seconds = Supper.WhenEaten.seconds;
+	//члены семьи
+	familly person1{ "Natal'ia","My mother" };
+	familly person2{ "Andrey","My father" };
+	familly person3{ "Mikhail","This is me" };
+	familly person4{ "Denis","My brother" };
+	struct familly* myFamilly;
+	myFamilly = new struct familly[3];
+	myFamilly[0].name = person1.name;
+	myFamilly[0].connection = person1.connection;
+	myFamilly[1].name = person2.name;
+	myFamilly[1].connection = person2.connection;
+	myFamilly[2].name = person3.name;
+	myFamilly[2].connection = person3.connection;
+	myFamilly[3].name = person4.name;
+	myFamilly[3].connection = person4.connection;
+	//Задание 4 конец
 
 
 	return 0;
