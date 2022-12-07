@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exam", "exam\exam.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Structure", "Structure\Structure.vcxproj", "{754EBA8C-BD50-4F54-ABD7-38E8F01534E6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FactoryOfFurniture", "FactoryOfFurniture\FactoryOfFurniture.vcxproj", "{E9855F29-C88C-43A9-A3B2-7911F1321E19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +203,14 @@ Global
 		{754EBA8C-BD50-4F54-ABD7-38E8F01534E6}.Release|x64.Build.0 = Release|x64
 		{754EBA8C-BD50-4F54-ABD7-38E8F01534E6}.Release|x86.ActiveCfg = Release|Win32
 		{754EBA8C-BD50-4F54-ABD7-38E8F01534E6}.Release|x86.Build.0 = Release|Win32
+		{E9855F29-C88C-43A9-A3B2-7911F1321E19}.Debug|x64.ActiveCfg = Debug|x64
+		{E9855F29-C88C-43A9-A3B2-7911F1321E19}.Debug|x64.Build.0 = Debug|x64
+		{E9855F29-C88C-43A9-A3B2-7911F1321E19}.Debug|x86.ActiveCfg = Debug|Win32
+		{E9855F29-C88C-43A9-A3B2-7911F1321E19}.Debug|x86.Build.0 = Debug|Win32
+		{E9855F29-C88C-43A9-A3B2-7911F1321E19}.Release|x64.ActiveCfg = Release|x64
+		{E9855F29-C88C-43A9-A3B2-7911F1321E19}.Release|x64.Build.0 = Release|x64
+		{E9855F29-C88C-43A9-A3B2-7911F1321E19}.Release|x86.ActiveCfg = Release|Win32
+		{E9855F29-C88C-43A9-A3B2-7911F1321E19}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -176,7 +176,7 @@ int main() {
 	main_BigEaters[2].WhenEaten.hour = Supper.WhenEaten.hour;
 	main_BigEaters[2].WhenEaten.min = Supper.WhenEaten.min;
 	main_BigEaters[2].WhenEaten.seconds = Supper.WhenEaten.seconds;
-	//члены семьи
+	//семья
 	familly person1{ "Natal'ia","My mother" };
 	familly person2{ "Andrey","My father" };
 	familly person3{ "Mikhail","This is me" };
@@ -192,6 +192,7 @@ int main() {
 	myFamilly[3].name = person4.name;
 	myFamilly[3].connection = person4.connection;
 	//Задание 4 конец
+
 
 
 	return 0;
